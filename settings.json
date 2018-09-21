@@ -1,0 +1,7 @@
+{
+  "http_port": "8081",
+  "mongodb_url": "mongodb://localhost:27017/",
+  "mongodb_db": "upload",
+  "mongodb_collection": "files"
+}
+

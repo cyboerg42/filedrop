@@ -1,0 +1,28 @@
+{
+  "name": "mongodrop",
+  "version": "0.0.1",
+  "description": "An AJAX file uploader using JS, NodeJS and MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fady Makram",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "formidable": "^1.0.17",
+    "mongodb": "^3.1.6",
+    "url": "^0.11.0",
+    "uuid": "^3.3.2",
+    "xxhash": "^0.2.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyborg00222/mongodrop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cyborg00222/mongodrop/issues"
+  },
+  "homepage": "https://github.com/cyborg00222/mongodrop#readme"
+}
