@@ -19,10 +19,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cyborg00222/mongodrop.git"
+    "url": "git+https://github.com/cyborg00222/filedrop.git"
   },
   "bugs": {
-    "url": "https://github.com/cyborg00222/mongodrop/issues"
+    "url": "https://github.com/cyborg00222/filedrop"
   },
-  "homepage": "https://github.com/cyborg00222/mongodrop#readme"
+  "homepage": "https://github.com/cyborg00222/filedrop"
 }
