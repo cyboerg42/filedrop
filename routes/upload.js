@@ -29,7 +29,7 @@ router.post('/', function(req, res, next) {
                     res.end("ERROR - please try again!");
                 }
                 let filestream = fs.readFileSync(file.path),
-                const hash = XXHash.hash(filestream, 0xCAFEBABE);
+                hash = XXHash.hash(filestream, 0xCAFEBABE);
                 query = {
                     xxhash: hash
                 };
