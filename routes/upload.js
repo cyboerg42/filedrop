@@ -53,8 +53,7 @@ router.post('/', function(req, res, next) {
                         res.end('<a href="/download?file=' + c_uuid + '"><font color="white">DOWNLOAD</font></a>');
                     } else {
                         db.close();
-                        c_uuid = result[0]._id;
-                        res.end('<a href="/download?file=' + c_uuid + '"><font color="white">DOWNLOAD</font></a>');
+                        res.end('<a href="/download?file=' + result[0]._id + '"><font color="white">DOWNLOAD</font></a>');
                         fs.unlink(file.path, function(err) {
                             if (err) throw err;
                         });
