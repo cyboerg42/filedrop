@@ -18,6 +18,7 @@ router.get('/', function(req, res, next) {
         };
         dbo.collection(settings.get("mongodb_collection")).find(query).toArray(function(err, result) {
             if (err) throw err;
+            db.close();
             if (result.length != 0) res.download(path.join(__dirname, '../uploads/' + result[0].xxhash), result[0].name);
             else res.send('Not found...');
         });
