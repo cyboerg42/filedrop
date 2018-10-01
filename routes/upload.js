@@ -3,7 +3,6 @@ var router = express.Router();
 var path = require('path');
 var formidable = require('formidable');
 var fs = require('fs');
-var XXHash = require('xxhash')
 var MongoClient = require('mongodb').MongoClient;
 var uuidv4 = require('uuid-random')
 var settings = require('../modules/settings.js');
@@ -31,11 +30,8 @@ router.post('/', function(req, res, next) {
                     db.close();
                     res.end("ERROR - please try again!");
                 }
-                //let filestream = fs.readFileSync(file.path),
-                //hash = XXHash.hash(filestream, 0xCAFEBABE);
                 var HashStream = require('xxhash').Stream,
                     hasher = new HashStream(0xCAFEBABE);
-
                 fs.createReadStream(file.path)
                     .pipe(hasher)
                     .on('finish', function() {
@@ -71,9 +67,8 @@ router.post('/', function(req, res, next) {
                             }
                         });
                     });
-            });
+              });
         });
-
     });
     form.on('error', function(err) {
         console.log('An error has occured: \n' + err);
