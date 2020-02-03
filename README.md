@@ -8,7 +8,7 @@ dependencies : mongodb, nodejs
 temporary install : 
 
 ```
-git clone https://github.com/cyborg00222/filedrop
+git clone https://github.com/cyboerg42/filedrop
 cd filedrop
 npm install
 node app.js
@@ -18,7 +18,7 @@ install as a service :
 
 ```
 cd /srv/
-git clone https://github.com/cyborg00222/filedrop
+git clone https://github.com/cyboerg42/filedrop
 useradd -d /srv/filedrop -G nodejs nodejs
 chown -R nodejs:nodejs /srv/filedrop
 ```
