@@ -19,6 +19,7 @@ install as a service :
 ```
 cd /srv/
 git clone https://github.com/cyboerg42/filedrop
+groupadd nodejs
 useradd -d /srv/filedrop -G nodejs nodejs
 chown -R nodejs:nodejs /srv/filedrop
 ```
